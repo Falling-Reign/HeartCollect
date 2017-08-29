@@ -17,7 +17,7 @@ public class //CHANGE TO SCRIPT NAME// : MonoBehaviour {
 
         //grab audio from component then play
         AudioSource collect = GetComponent<AudioSource>();
-		collect.Play ();
+	collect.Play ();
 
         //destroy gameObject after 1 second
         Destroy(gameObject, 1f);
