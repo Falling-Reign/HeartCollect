@@ -1,0 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class //CHANGE TO SCRIPT NAME// : MonoBehaviour {
+
+	void Update ()
+  {
+		transform.Rotate (0f, 2f, 0f);
+	}
+
+
+	void OnTriggerEnter ()
+    {
+        //erase mesh
+        gameObject.GetComponent<Renderer>().enabled = false;
+
+        //grab audio from component then play
+        AudioSource collect = GetComponent<AudioSource>();
+		collect.Play ();
+
+        //destroy gameObject
+        Destroy(gameObject, 1f);
+	}
+}
