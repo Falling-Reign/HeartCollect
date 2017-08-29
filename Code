@@ -19,7 +19,7 @@ public class //CHANGE TO SCRIPT NAME// : MonoBehaviour {
         AudioSource collect = GetComponent<AudioSource>();
 		collect.Play ();
 
-        //destroy gameObject
+        //destroy gameObject after 1 second
         Destroy(gameObject, 1f);
 	}
 }
